@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  /* width: 100%; */
+  margin-bottom: 10px;
+  border-radius: 10px !important;
+}
+
+h1 {
+  color: rgb(225, 76, 65);
+  text-transform: uppercase;
+  font-weight: 500px;
+  font-size: 30px;
+  margin: 0;
+}
+
+#cesta-carrito {
+  border: none;
+  color: rgb(225, 76, 65);
+  font-size: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 20px;
+  transition: all .3s;
+}
+
+#cesta-carrito:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(225, 76, 65);
+}
+
+#cesta-carrito:focus {
+  outline: none;
+}
+
+#producto-contenedor {
+  display: grid;
+  gap: 1rem;
+  max-width: 60rem;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.card {
+  max-width: 30%;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+select {
+  display: inline;
+  text-align: center;
+  border: 1px solid lightskyblue;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all .5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+
+.modal-carrito h3 {
+  color: rgb(225, 76, 65);
+  padding-bottom: 5px;
+}
+
+.modal-carrito #btn-cerrar-carrito {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(225, 76, 65) !important;
+  border: none;
+  background-color: white;
+}
+
+.modal-carrito #btn-cerrar-carrito:hover {
+  cursor: pointer;
+}
+
+.modal-carrito #btn-cerrar-carrito:focus {
+  outline: none;
+}
+
+.modal-carrito .producto-precio {
+  padding-top: 10px;
+}
+
+.card .card-image .card-title {
+  color: rgb(225, 76, 65);
+  position: unset
+}
+
+.productoEnCarrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+  border-left: 5px solid rgb(225, 76, 65);
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: #ff6961;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-confirmar {
+  background-color: white;
+  color: #413e3d;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+
+.boton-eliminar:focus {
+  outline: none;
+}
+
+.boton-confirmar:hover {
+  cursor: pointer;
+}
+
+.boton-confirmar:focus {
+  outline: none;
+}
+
+
+header {
+  background-color: #121213; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+#banner {
+  background-color: #121213; }
+
+
+.card .card-content {
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.card .card-image .card-title {
+padding: 0;
+color: #121213;
+font-size: 1.3em;
+
+}
+
+header {
+  background-color: #121213; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+#banner {
+  background-color: #121213; }
+
+#inicia {
+  background-color: #27242b;
+  color: #FFFFFF;
+  margin: 0px; }
+
+.the_witcher {
+  background-color: #414142ec;
+  color: #FFFFFF; }
+
+#geralt__img {
+  background-image: url(../images/background__historia.jpg); }
+
+.footer {
+  background-color: #0f0f16;
+  padding-left: 3rem; }
+
+#historia {
+  background-image: url(../images/background__historia.jpg); }
+
+#tienda {
+  background-image: url(../images/background__historia.jpg);
+  color: #FFFFFF; }
+
+#gal {
+  background-image: url(../images/background__historia.jpg);
+  color: #FFFFFF; }
+
+#noticias {
+  background-image: url(../images/background__historia.jpg);
+  color: #FFFFFF; }
+
+#historia {
+  color: #FFFFFF; }
+
+.h1_general{
+  color: #FFFFFF;
+}
+h3 {
+  color: #0f0f16;
+}
+
+#cesta-carrito{
+  color: #0f0f16;
+}
