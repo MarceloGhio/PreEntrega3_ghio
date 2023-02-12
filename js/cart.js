@@ -1,4 +1,3 @@
-//Carrito de compras
 let carrito = []
 
 const productoContenedor = document.getElementById('producto-contenedor')
@@ -27,7 +26,7 @@ const validarProductoRepetido = (productoId) => {
     }
 };
 
-//Arrow funcion de pintarProductos con info de productos
+
 const pintarProductoCarrito = (producto) => {
     const contenedor = document.getElementById('carrito-contenedor')
     const div = document.createElement('div')
@@ -75,7 +74,7 @@ const pintarCarrito = (carrito) => {
         contenedor.appendChild(div)
     });
 };
-//Funcion eliminar productos
+
 const eliminarProductosCarrito = (productoId) => {
     const productoIndex = carrito.findIndex(producto => producto.id == productoId)
     carrito.splice(productoIndex, 1)

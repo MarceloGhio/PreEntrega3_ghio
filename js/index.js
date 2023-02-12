@@ -2,8 +2,6 @@
 document.addEventListener('DOMContentLoaded', cargarCarrito());
 
 
-//boton finalizar compra
-
 const btn99 = document.querySelector('#btn99')
 
 btn99.addEventListener('click', () => {
