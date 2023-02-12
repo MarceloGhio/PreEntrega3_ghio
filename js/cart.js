@@ -1,3 +1,4 @@
+//Carrito de compras
 let carrito = []
 
 const productoContenedor = document.getElementById('producto-contenedor')
@@ -26,6 +27,7 @@ const validarProductoRepetido = (productoId) => {
     }
 };
 
+//Arrow funcion de pintarProductos con info de productos
 const pintarProductoCarrito = (producto) => {
     const contenedor = document.getElementById('carrito-contenedor')
     const div = document.createElement('div')
@@ -68,12 +70,12 @@ const pintarCarrito = (carrito) => {
             <p>Precio: ${producto.precio}</p>
             <p id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
             <button class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
-            <button class="btn waves-effect waves-ligth boton-confirmar" value="${producto.id}">V</button>
+            
         `
         contenedor.appendChild(div)
     });
 };
-
+//Funcion eliminar productos
 const eliminarProductosCarrito = (productoId) => {
     const productoIndex = carrito.findIndex(producto => producto.id == productoId)
     carrito.splice(productoIndex, 1)
@@ -102,18 +104,3 @@ const cargarCarrito = () => {
 cargarCarrito()
 
 
-//Confirmacion de E-Mail
-let userEmail = " " ;
-let confirmUserEmail = " " ;
-let askAgain = true ;
-do{
-    userEmail = prompt ("Ingrese su correo") ;
-    confirmUserEmail = prompt ("Confirme su correo") ;
-    if (userEmail === confirmUserEmail) {
-        alert ("El correo " + userEmail + " ha sido guardado con éxito, alli se enviaran los datos de realizar una compra!") ;
-    console.log("Iniciaste los procedimientos de compra, disfruta nuestros increibles juguetesa!. Vuelve pronto.");
-    askAgain = false ;
-    } else { 
-        alert ("Los correos deben ser iguales!") ;
-    }
-} while (askAgain)
