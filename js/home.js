@@ -1,6 +1,8 @@
 const pintarProductos = (data) => {
     const contenedor = document.getElementById("producto-contenedor");
 
+//Agregando al carrito
+
     data.forEach(producto => {
       const div = document.createElement('div');
       div.classList.add('card');

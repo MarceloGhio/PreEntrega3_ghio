@@ -58,7 +58,15 @@
         
     </div>
 </section>
-    <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+    <div>
+
+        <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+    </div>
+    
+    <!-- <div>
+
+        <button id="vaciarCarrito"><i class="btn btn-danger btn-sm">Vaciar Carrito</i>
+    </div> -->
 
     <main id="producto-contenedor">
 
@@ -70,15 +78,19 @@
         <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
         <div id="carrito-contenedor">
 
+            <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
         </div>
-        <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+        <div>
 
+            <button id="vaciarCarrito"><i class="btn btn-succes container-fluid  flex-wrap  justify-content-between animate__animated animate__backInRight">Vaciar Carrito</i>
+        </div>
+
+        <div class="text-center">
+            <button type="button" id="btn99" class="vaciarCarritoBoton btn btn-succes container-fluid  flex-wrap  justify-content-between animate__animated animate__backInRight">Finalizar compra</button>
+        </div>
     </div>
     </div>
 
-    <div class="text-center">
-        <button type="button" id="btn99" class="btn btn-succes container-fluid  flex-wrap  justify-content-between animate__animated animate__backInRight">Finalizar compra</button>
-    </div>
 
 
     <footer class="footer">
